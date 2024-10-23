@@ -4,11 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Footer Design with Tailwind</title>
+    
+    <!-- Google Fonts: Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom font class for Poppins */
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
 </head>
 <body class="bg-gray-100">
 
-    <footer class="bg-[#D8FFD0] py-12 px-8 md:px-20">
+    <footer class="bg-green-100 py-12 px-8 md:px-20">
         <div class="flex flex-col md:flex-row justify-between space-y-8 md:space-y-0">
             
             <!-- First column: Logo, Social Icons, and Text -->
@@ -17,18 +27,24 @@
                     <img src="logo.png" alt="QuickFinds Logo" class="w-12">
                     <h3 class="text-2xl font-bold">Quick<span class="text-green-600">Finds</span></h3>
                 </div>
-                <p class="mt-4 text-gray-700">Empowering change through innovative solutions that shape a better future.</p>
 
-                <!-- Social Media Icons -->
+                <!-- Text split into three lines with Poppins font -->
+                <p class="mt-4 text-gray-700 font-normal">
+                    Empowering change through <br>
+                    innovative solutions that <br>
+                    shape a better future.
+                </p>
+
+                <!-- Social Media Icons with #51B504 color -->
                 <div class="flex space-x-4 mt-4">
-                    <a href="#"><img src="https://img.icons8.com/ios-filled/50/4caf50/facebook.png" alt="Facebook" class="w-8 h-8"></a>
-                    <a href="#"><img src="https://img.icons8.com/ios-filled/50/4caf50/twitter.png" alt="Twitter" class="w-8 h-8"></a>
-                    <a href="#"><img src="https://img.icons8.com/ios-filled/50/4caf50/linkedin.png" alt="LinkedIn" class="w-8 h-8"></a>
-                    <a href="#"><img src="https://img.icons8.com/ios-filled/50/4caf50/instagram-new.png" alt="Instagram" class="w-8 h-8"></a>
+                    <a href="#"><img src="https://img.icons8.com/ios-filled/50/51B504/facebook.png" alt="Facebook" class="w-8 h-8"></a>
+                    <a href="#"><img src="https://img.icons8.com/ios-filled/50/51B504/twitter.png" alt="Twitter" class="w-8 h-8"></a>
+                    <a href="#"><img src="https://img.icons8.com/ios-filled/50/51B504/linkedin.png" alt="LinkedIn" class="w-8 h-8"></a>
+                    <a href="#"><img src="https://img.icons8.com/ios-filled/50/51B504/instagram-new.png" alt="Instagram" class="w-8 h-8"></a>
                 </div>
 
-                <!-- Copyright Text moved further down -->
-                <p class="mt-28 text-gray-700">&copy; 2024 QuickFinds. All rights reserved.</p> 
+                <!-- Copyright text directly below QuickFinds -->
+                <p class="mt-16 text-gray-700">&copy; 2024 QuickFinds. All rights reserved.</p>
             </div>
 
             <!-- Second column: Quick Links -->
@@ -48,8 +64,8 @@
                 <h3 class="text-xl font-bold mb-4">Address</h3>
                 <p class="text-gray-700">Design Agency Head Office<br>Airport Road<br>United Arab Emirates</p>
 
-                <!-- Privacy Terms moved further down -->
-                <div class="mt-32 text-gray-700"> <!-- Increased margin-top here to move them down -->
+                <!-- Privacy Terms aligned directly under Address -->
+                <div class="mt-32 text-gray-700">
                     <a href="#" class="hover:underline">Privacy</a> | 
                     <a href="#" class="hover:underline">Terms</a>
                 </div>
